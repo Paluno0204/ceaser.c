@@ -108,7 +108,7 @@ void decryption(char *str,char str_neo[100][100],int m){
                     new_str_y[a]=str_neo[j][k]+y;
                     
                     if(65<=str_neo[j][k] && str_neo[j][k]<=90){    //その文字が大文字のとき
-                        if(90<str_neo[j][k]-x ){    //Zを超えたとき（str_x）
+                        if(90<str_neo[j][k]+x ){    //Zを超えたとき（str_x）
                             new_str_x[a]=64+((str_neo[j][k]+x)-90);
                         }
                         else if(str_neo[j][k]+x<65){    //Aを超えたとき(str_x)
